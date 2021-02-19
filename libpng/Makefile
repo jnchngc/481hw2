@@ -538,13 +538,13 @@ AUTOCONF = ${SHELL} /home/cjench/Desktop/hw2/481hw2/libpng/missing autoconf
 AUTOHEADER = ${SHELL} /home/cjench/Desktop/hw2/481hw2/libpng/missing autoheader
 AUTOMAKE = ${SHELL} /home/cjench/Desktop/hw2/481hw2/libpng/missing automake-1.15
 AWK = gawk
-CC = /home/cjench/Desktop/hw2/481hw2/afl/afl-gcc
-CCAS = /home/cjench/Desktop/hw2/481hw2/afl/afl-gcc
+CC = gcc
+CCAS = gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -static
+CCASFLAGS = --coverage -static
 CCDEPMODE = depmode=gcc3
-CFLAGS = -static
-CPP = /home/cjench/Desktop/hw2/481hw2/afl/afl-gcc -E
+CFLAGS = --coverage -static
+CPP = gcc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -555,7 +555,7 @@ DEPDIR = .deps
 # checks input tokens for validity - effectively it performs part of the ANSI-C
 # parsing - and therefore fails with the .df files.  configure.ac has special
 # checks for this and sets DFNCPP appropriately.
-DFNCPP = /home/cjench/Desktop/hw2/481hw2/afl/afl-gcc -E
+DFNCPP = gcc -E
 DLLTOOL = false
 DSYMUTIL = 
 DUMPBIN = 
@@ -621,7 +621,7 @@ abs_srcdir = /home/cjench/Desktop/hw2/481hw2/libpng
 abs_top_builddir = /home/cjench/Desktop/hw2/481hw2/libpng
 abs_top_srcdir = /home/cjench/Desktop/hw2/481hw2/libpng
 ac_ct_AR = ar
-ac_ct_CC = /home/cjench/Desktop/hw2/481hw2/afl/afl-gcc
+ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
